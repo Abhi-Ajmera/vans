@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import image54 from '../assets/image54.png';
 
 const About = () => {
@@ -24,7 +25,9 @@ const About = () => {
           <h4 className='bg-transparent font-bold text-lg'>
             Your destination is waiting. <br /> Your van is ready.
           </h4>
-          <button className='bg-black mt-4 px-8 py-3 text-white'>Explore Our Vans</button>
+          <Link to={'/vans'}>
+            <button className='bg-black mt-4 px-8 py-3 text-white'>Explore Our Vans</button>
+          </Link>
         </div>
       </div>
     </div>
